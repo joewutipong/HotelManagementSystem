@@ -19,10 +19,6 @@ internal class Program
     {
         try
         {
-            var watch = new System.Diagnostics.Stopwatch();
-
-            watch.Start();
-
             string[] lines = File.ReadAllLines("Files/input.txt");
 
             foreach (string line in lines)
@@ -65,10 +61,6 @@ internal class Program
                         break;
                 }
             }
-
-            watch.Stop();
-
-            Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
         }
         catch (Exception ex)
         {
